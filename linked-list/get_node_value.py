@@ -1,6 +1,7 @@
 from typing import Any, Optional
 from node import Node
 
+
 def get_node_value(head, index) -> Optional[Any]:
     """
     Write a function, get_node_value, that takes in the head of a linked list and an index.
@@ -22,6 +23,7 @@ def get_node_value(head, index) -> Optional[Any]:
 
     return index_val
 
+
 if __name__ == "__main__":
     a = Node("a")
     b = Node("b")
@@ -34,4 +36,4 @@ if __name__ == "__main__":
 
     # a -> b -> c -> d
 
-    print(get_node_value(a, 2)) # c
+    print(get_node_value(a, 2))  # c

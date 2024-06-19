@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def most_frequent_char(s: str) -> str:
     # approach: 1st loop to loop through entire string to form a dictionary
     # 2nd loop to find max count of letter
@@ -16,6 +17,6 @@ def most_frequent_char(s: str) -> str:
 
 
 if __name__ == "__main__":
-    example = "mississippi" # s
+    example = "mississippi"  # s
     ans = most_frequent_char(example)
     print(ans)

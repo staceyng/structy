@@ -1,5 +1,6 @@
 from node import Node
 
+
 def sum_list(head) -> int:
     """
     Write a function, sum_list, that takes in the head of a linked list containing numbers as an argument.
@@ -14,6 +15,7 @@ def sum_list(head) -> int:
 
     return sum
 
+
 if __name__ == "__main__":
     x = Node(38)
     y = Node(4)
@@ -21,5 +23,5 @@ if __name__ == "__main__":
 
     z = Node(100)
 
-    print(sum_list(x)) # 42
-    print(sum_list(z)) # 100
+    print(sum_list(x))  # 42
+    print(sum_list(z))  # 100

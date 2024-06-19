@@ -1,5 +1,6 @@
 from node import Node
 
+
 def linked_list_find(head, target) -> bool:
     """
     Write a function, linked_list_find, that takes in the head of a linked list and a target value.
@@ -19,6 +20,7 @@ def linked_list_find(head, target) -> bool:
 
     return is_found
 
+
 if __name__ == "__main__":
     a = Node("a")
     b = Node("b")
@@ -31,4 +33,4 @@ if __name__ == "__main__":
 
     # a -> b -> c -> d
 
-    print(linked_list_find(a, "c")) # True
+    print(linked_list_find(a, "c"))  # True
