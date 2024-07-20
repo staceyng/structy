@@ -1,5 +1,5 @@
-from node import Node
 from linked_list_values import linked_list_values
+from node import Node
 
 
 def reverse_list(head):
@@ -13,7 +13,9 @@ def reverse_list(head):
     #       prev curr next
 
     while current is not None:
-        next = current.next  # save current.next to a variable next because we might lose access to the B Node
+        next = (
+            current.next
+        )  # save current.next to a variable next because we might lose access to the B Node
         current.next = prev
 
         # move positions

@@ -1,5 +1,6 @@
-from node import Node
 from linked_list_values import linked_list_values
+from node import Node
+
 """
 Write a function, zipper_lists, that takes in the head of two linked lists as arguments.
 The function should zipper the two lists together into single linked list by alternating nodes.
@@ -9,14 +10,15 @@ The function should return the head of the zippered linked list.
 Do this in-place, by mutating the original Nodes.
 """
 
+
 def zipper_lists(head_1, head_2):
     tail = head_1
     curr1 = head_1.next
     curr2 = head_2
-    counter = 0 # when count is even: pick from list2, odd: pick from list1
+    counter = 0  # when count is even: pick from list2, odd: pick from list1
 
     while curr1 and curr2:
-        if counter%2 == 0:
+        if counter % 2 == 0:
             # even
             tail.next = curr2
             curr2 = curr2.next
@@ -35,6 +37,7 @@ def zipper_lists(head_1, head_2):
         tail.next = curr2
 
     return head_1
+
 
 if __name__ == "__main__":
     a = Node("a")
