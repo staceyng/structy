@@ -3,7 +3,7 @@ from node import Node
 
 
 def remove_node(head, target_val):
-    # traverse list to find target val, check if next.next exists and then update
+    # traverse list to find target val, assign prev.next = curr.next and then update prev and curr nodes
     # a -> b -> c -> d -> e
     # None -> a -> b -> c -> d -> e
     # prev   curr
