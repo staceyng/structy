@@ -1,16 +1,26 @@
 from node import Node
+from collections import deque
 
 
 def bottom_right_value(root):
-    # solve recursively
-    # base case
-    if root.left is None and root.right is None:
-        return root.value
+    # use breath first search to solve
+    # solve by using a queue, push left node into queue first, followed by right node
+    q = deque([root])
 
-    # recursive case
-    if root.right:
-        right = bottom_right_value(root.right)
-        return right.value
+    current = None
+    while q: 
+        current = q.popleft()
+        
+        if current.left is not None:
+            q.append(current.left)
+        
+        if current.right is not None:
+            q.append(current.right)
+    
+    return current.val
+
+
+
 
 
 if __name__ == "__main__":
