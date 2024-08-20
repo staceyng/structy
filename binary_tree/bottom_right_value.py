@@ -1,5 +1,6 @@
-from node import Node
 from collections import deque
+
+from node import Node
 
 
 def bottom_right_value(root):
@@ -8,19 +9,16 @@ def bottom_right_value(root):
     q = deque([root])
 
     current = None
-    while q: 
+    while q:
         current = q.popleft()
-        
+
         if current.left is not None:
             q.append(current.left)
-        
+
         if current.right is not None:
             q.append(current.right)
-    
+
     return current.val
-
-
-
 
 
 if __name__ == "__main__":
