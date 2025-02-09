@@ -1,11 +1,12 @@
+"""
+Write a function, depth_first_values, that takes in the root of a binary tree.
+The function should return a list containing all values of the tree in depth-first order.
+"""
+
 from node import Node
 
 
 def depth_first_values(root):
-    """
-    Write a function, depth_first_values, that takes in the root of a binary tree.
-    The function should return a list containing all values of the tree in depth-first order.
-    """
     # depth first -> go deeper fisrt (traverse left side of tree when left is present)
     # approach:
     # - use stack, push right child first then left child

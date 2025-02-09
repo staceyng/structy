@@ -1,11 +1,12 @@
+"""
+Write a function, tree_value_count, that takes in the root of a binary tree and a target value.
+The function should return the number of times that the target occurs in the tree.
+"""
+
 from node import Node
 
 
 def tree_value_count(root, target):
-    """
-    Write a function, tree_value_count, that takes in the root of a binary tree and a target value.
-    The function should return the number of times that the target occurs in the tree.
-    """
     # solve recursively
     if root is None:
         return 0
