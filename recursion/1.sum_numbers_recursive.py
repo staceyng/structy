@@ -1,3 +1,8 @@
+"""
+Write a function sumNumbersRecursive that takes in an array of numbers and returns the sum of all the numbers in the array.
+All elements will be integers. Solve this recursively.
+"""
+
 from typing import List
 
 
