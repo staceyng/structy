@@ -1,3 +1,9 @@
+"""
+Write a function, connected_components_count, that takes in the adjacency list of an undirected graph.
+The function should return the number of connected components within the graph.
+"""
+
+
 def connected_components_count(graph):
     count = 0
     visited = set()
